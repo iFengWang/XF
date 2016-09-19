@@ -24,4 +24,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    return nil;
+}
+
+-(void)forwardInvocation:(NSInvocation *)anInvocation {
+//    objc_class;
+//    objc_object;
+}
+
 @end

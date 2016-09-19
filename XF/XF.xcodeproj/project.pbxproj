@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B2E39A1D8E2E1700D292C8 /* XFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E37C1D8E2E1700D292C8 /* XFBaseViewController.m */; };
+		01B2E39B1D8E2E1700D292C8 /* XFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E37E1D8E2E1700D292C8 /* XFObject.m */; };
+		01B2E39C1D8E2E1700D292C8 /* DeviceUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E3821D8E2E1700D292C8 /* DeviceUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		01B2E39D1D8E2E1700D292C8 /* XFConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E3841D8E2E1700D292C8 /* XFConfig.m */; };
+		01B2E39E1D8E2E1700D292C8 /* XFApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E38B1D8E2E1700D292C8 /* XFApi.m */; };
+		01B2E39F1D8E2E1700D292C8 /* XFNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E38D1D8E2E1700D292C8 /* XFNetEngine.m */; };
+		01B2E3A01D8E2E1700D292C8 /* XFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E3931D8E2E1700D292C8 /* XFCacheManager.m */; };
+		01B2E3A11D8E2E1700D292C8 /* XFHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E3991D8E2E1700D292C8 /* XFHelper.m */; };
+		01B2E3A51D8E2EC200D292C8 /* XFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E3A41D8E2EC200D292C8 /* XFModel.m */; };
+		01B2E3A81D8E2EEE00D292C8 /* XFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2E3A71D8E2EEE00D292C8 /* XFUser.m */; };
 		01BBC89B1D87C41F00689BFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC89A1D87C41F00689BFF /* main.m */; };
 		01BBC89E1D87C41F00689BFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC89D1D87C41F00689BFF /* AppDelegate.m */; };
 		01BBC8A11D87C41F00689BFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC8A01D87C41F00689BFF /* ViewController.m */; };
@@ -16,6 +26,7 @@
 		01BBC8AC1D87C41F00689BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBC8AA1D87C41F00689BFF /* LaunchScreen.storyboard */; };
 		01BBC8B71D87C41F00689BFF /* XFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC8B61D87C41F00689BFF /* XFTests.m */; };
 		01BBC8C21D87C41F00689BFF /* XFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC8C11D87C41F00689BFF /* XFUITests.m */; };
+		C3E5A337AFA98E1B984AA172 /* libPods-XF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD90BFE34D4A5FFF50ABBEDB /* libPods-XF.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B2E36A1D8CFA2000D292C8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		01B2E37B1D8E2E1700D292C8 /* XFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFBaseViewController.h; sourceTree = "<group>"; };
+		01B2E37C1D8E2E1700D292C8 /* XFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFBaseViewController.m; sourceTree = "<group>"; };
+		01B2E37D1D8E2E1700D292C8 /* XFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFObject.h; sourceTree = "<group>"; };
+		01B2E37E1D8E2E1700D292C8 /* XFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFObject.m; sourceTree = "<group>"; };
+		01B2E3811D8E2E1700D292C8 /* DeviceUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUDID.h; sourceTree = "<group>"; };
+		01B2E3821D8E2E1700D292C8 /* DeviceUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUDID.m; sourceTree = "<group>"; };
+		01B2E3831D8E2E1700D292C8 /* XFConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFConfig.h; sourceTree = "<group>"; };
+		01B2E3841D8E2E1700D292C8 /* XFConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFConfig.m; sourceTree = "<group>"; };
+		01B2E38A1D8E2E1700D292C8 /* XFApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFApi.h; sourceTree = "<group>"; };
+		01B2E38B1D8E2E1700D292C8 /* XFApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFApi.m; sourceTree = "<group>"; };
+		01B2E38C1D8E2E1700D292C8 /* XFNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFNetEngine.h; sourceTree = "<group>"; };
+		01B2E38D1D8E2E1700D292C8 /* XFNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFNetEngine.m; sourceTree = "<group>"; };
+		01B2E3921D8E2E1700D292C8 /* XFCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFCacheManager.h; sourceTree = "<group>"; };
+		01B2E3931D8E2E1700D292C8 /* XFCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFCacheManager.m; sourceTree = "<group>"; };
+		01B2E3981D8E2E1700D292C8 /* XFHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFHelper.h; sourceTree = "<group>"; };
+		01B2E3991D8E2E1700D292C8 /* XFHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFHelper.m; sourceTree = "<group>"; };
+		01B2E3A31D8E2EC200D292C8 /* XFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFModel.h; sourceTree = "<group>"; };
+		01B2E3A41D8E2EC200D292C8 /* XFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFModel.m; sourceTree = "<group>"; };
+		01B2E3A61D8E2EEE00D292C8 /* XFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFUser.h; sourceTree = "<group>"; };
+		01B2E3A71D8E2EEE00D292C8 /* XFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFUser.m; sourceTree = "<group>"; };
 		01BBC8961D87C41F00689BFF /* XF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBC89A1D87C41F00689BFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01BBC89C1D87C41F00689BFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +85,9 @@
 		01BBC8BD1D87C41F00689BFF /* XFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBC8C11D87C41F00689BFF /* XFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFUITests.m; sourceTree = "<group>"; };
 		01BBC8C31D87C41F00689BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73E134EA0202F1A52BFE85B /* Pods-XF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XF.release.xcconfig"; path = "Pods/Target Support Files/Pods-XF/Pods-XF.release.xcconfig"; sourceTree = "<group>"; };
+		DDCD8E1ED43D48629A1B0A2F /* Pods-XF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XF/Pods-XF.debug.xcconfig"; sourceTree = "<group>"; };
+		FD90BFE34D4A5FFF50ABBEDB /* libPods-XF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XF.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E5A337AFA98E1B984AA172 /* libPods-XF.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +116,176 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B2E3781D8E2E1700D292C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E3A21D8E2E9500D292C8 /* Base */,
+				01B2E3A61D8E2EEE00D292C8 /* XFUser.h */,
+				01B2E3A71D8E2EEE00D292C8 /* XFUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01B2E3791D8E2E1700D292C8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E37A1D8E2E1700D292C8 /* BaseService */,
+				01B2E37F1D8E2E1700D292C8 /* BlueToothService */,
+				01B2E3801D8E2E1700D292C8 /* ConfigService */,
+				01B2E3851D8E2E1700D292C8 /* CryptoService */,
+				01B2E3861D8E2E1700D292C8 /* LogService */,
+				01B2E3871D8E2E1700D292C8 /* MapService */,
+				01B2E3881D8E2E1700D292C8 /* MediaService */,
+				01B2E3891D8E2E1700D292C8 /* NetService */,
+				01B2E38E1D8E2E1700D292C8 /* NotifyService */,
+				01B2E38F1D8E2E1700D292C8 /* PayService */,
+				01B2E3901D8E2E1700D292C8 /* StoreService */,
+				01B2E3961D8E2E1700D292C8 /* SystemMonitorService */,
+				01B2E3971D8E2E1700D292C8 /* UtilService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		01B2E37A1D8E2E1700D292C8 /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E37B1D8E2E1700D292C8 /* XFBaseViewController.h */,
+				01B2E37C1D8E2E1700D292C8 /* XFBaseViewController.m */,
+				01B2E37D1D8E2E1700D292C8 /* XFObject.h */,
+				01B2E37E1D8E2E1700D292C8 /* XFObject.m */,
+			);
+			path = BaseService;
+			sourceTree = "<group>";
+		};
+		01B2E37F1D8E2E1700D292C8 /* BlueToothService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BlueToothService;
+			sourceTree = "<group>";
+		};
+		01B2E3801D8E2E1700D292C8 /* ConfigService */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E3811D8E2E1700D292C8 /* DeviceUDID.h */,
+				01B2E3821D8E2E1700D292C8 /* DeviceUDID.m */,
+				01B2E3831D8E2E1700D292C8 /* XFConfig.h */,
+				01B2E3841D8E2E1700D292C8 /* XFConfig.m */,
+			);
+			path = ConfigService;
+			sourceTree = "<group>";
+		};
+		01B2E3851D8E2E1700D292C8 /* CryptoService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CryptoService;
+			sourceTree = "<group>";
+		};
+		01B2E3861D8E2E1700D292C8 /* LogService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LogService;
+			sourceTree = "<group>";
+		};
+		01B2E3871D8E2E1700D292C8 /* MapService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapService;
+			sourceTree = "<group>";
+		};
+		01B2E3881D8E2E1700D292C8 /* MediaService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MediaService;
+			sourceTree = "<group>";
+		};
+		01B2E3891D8E2E1700D292C8 /* NetService */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E38A1D8E2E1700D292C8 /* XFApi.h */,
+				01B2E38B1D8E2E1700D292C8 /* XFApi.m */,
+				01B2E38C1D8E2E1700D292C8 /* XFNetEngine.h */,
+				01B2E38D1D8E2E1700D292C8 /* XFNetEngine.m */,
+			);
+			path = NetService;
+			sourceTree = "<group>";
+		};
+		01B2E38E1D8E2E1700D292C8 /* NotifyService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NotifyService;
+			sourceTree = "<group>";
+		};
+		01B2E38F1D8E2E1700D292C8 /* PayService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PayService;
+			sourceTree = "<group>";
+		};
+		01B2E3901D8E2E1700D292C8 /* StoreService */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E3911D8E2E1700D292C8 /* CacheManage */,
+				01B2E3941D8E2E1700D292C8 /* DataManage */,
+				01B2E3951D8E2E1700D292C8 /* FileManage */,
+			);
+			path = StoreService;
+			sourceTree = "<group>";
+		};
+		01B2E3911D8E2E1700D292C8 /* CacheManage */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E3921D8E2E1700D292C8 /* XFCacheManager.h */,
+				01B2E3931D8E2E1700D292C8 /* XFCacheManager.m */,
+			);
+			path = CacheManage;
+			sourceTree = "<group>";
+		};
+		01B2E3941D8E2E1700D292C8 /* DataManage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManage;
+			sourceTree = "<group>";
+		};
+		01B2E3951D8E2E1700D292C8 /* FileManage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FileManage;
+			sourceTree = "<group>";
+		};
+		01B2E3961D8E2E1700D292C8 /* SystemMonitorService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SystemMonitorService;
+			sourceTree = "<group>";
+		};
+		01B2E3971D8E2E1700D292C8 /* UtilService */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E3981D8E2E1700D292C8 /* XFHelper.h */,
+				01B2E3991D8E2E1700D292C8 /* XFHelper.m */,
+			);
+			path = UtilService;
+			sourceTree = "<group>";
+		};
+		01B2E3A21D8E2E9500D292C8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				01B2E3A31D8E2EC200D292C8 /* XFModel.h */,
+				01B2E3A41D8E2EC200D292C8 /* XFModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		01BBC88D1D87C41F00689BFF = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +293,8 @@
 				01BBC8B51D87C41F00689BFF /* XFTests */,
 				01BBC8C01D87C41F00689BFF /* XFUITests */,
 				01BBC8971D87C41F00689BFF /* Products */,
+				70146EB39AE6784F1E25AA91 /* Pods */,
+				D1C0D9A64A9473CBFE21818A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +311,16 @@
 		01BBC8981D87C41F00689BFF /* XF */ = {
 			isa = PBXGroup;
 			children = (
+				01B2E3781D8E2E1700D292C8 /* Model */,
+				01B2E3791D8E2E1700D292C8 /* Service */,
+				01BBC8991D87C41F00689BFF /* Supporting Files */,
+			);
+			path = XF;
+			sourceTree = "<group>";
+		};
+		01BBC8991D87C41F00689BFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				01BBC89C1D87C41F00689BFF /* AppDelegate.h */,
 				01BBC89D1D87C41F00689BFF /* AppDelegate.m */,
 				01BBC89F1D87C41F00689BFF /* ViewController.h */,
@@ -112,15 +330,8 @@
 				01BBC8AA1D87C41F00689BFF /* LaunchScreen.storyboard */,
 				01BBC8AD1D87C41F00689BFF /* Info.plist */,
 				01BBC8A51D87C41F00689BFF /* XF.xcdatamodeld */,
-				01BBC8991D87C41F00689BFF /* Supporting Files */,
-			);
-			path = XF;
-			sourceTree = "<group>";
-		};
-		01BBC8991D87C41F00689BFF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				01BBC89A1D87C41F00689BFF /* main.m */,
+				01B2E36A1D8CFA2000D292C8 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,6 +354,23 @@
 			path = XFUITests;
 			sourceTree = "<group>";
 		};
+		70146EB39AE6784F1E25AA91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDCD8E1ED43D48629A1B0A2F /* Pods-XF.debug.xcconfig */,
+				C73E134EA0202F1A52BFE85B /* Pods-XF.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1C0D9A64A9473CBFE21818A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD90BFE34D4A5FFF50ABBEDB /* libPods-XF.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +378,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01BBC8C61D87C41F00689BFF /* Build configuration list for PBXNativeTarget "XF" */;
 			buildPhases = (
+				3A157BBAB8E8AC3782BD456B /* [CP] Check Pods Manifest.lock */,
 				01BBC8921D87C41F00689BFF /* Sources */,
 				01BBC8931D87C41F00689BFF /* Frameworks */,
 				01BBC8941D87C41F00689BFF /* Resources */,
+				BC9995C2EB21D861A5EB9E63 /* [CP] Embed Pods Frameworks */,
+				FB9A682EFF101C33EA0CC664 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,14 +500,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A157BBAB8E8AC3782BD456B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9995C2EB21D861A5EB9E63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XF/Pods-XF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9A682EFF101C33EA0CC664 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XF/Pods-XF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01BBC8921D87C41F00689BFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B2E39C1D8E2E1700D292C8 /* DeviceUDID.m in Sources */,
+				01B2E39D1D8E2E1700D292C8 /* XFConfig.m in Sources */,
 				01BBC8A11D87C41F00689BFF /* ViewController.m in Sources */,
+				01B2E3A11D8E2E1700D292C8 /* XFHelper.m in Sources */,
+				01B2E3A81D8E2EEE00D292C8 /* XFUser.m in Sources */,
+				01B2E39F1D8E2E1700D292C8 /* XFNetEngine.m in Sources */,
+				01B2E3A01D8E2E1700D292C8 /* XFCacheManager.m in Sources */,
+				01B2E39E1D8E2E1700D292C8 /* XFApi.m in Sources */,
+				01B2E39A1D8E2E1700D292C8 /* XFBaseViewController.m in Sources */,
 				01BBC8A71D87C41F00689BFF /* XF.xcdatamodeld in Sources */,
 				01BBC89E1D87C41F00689BFF /* AppDelegate.m in Sources */,
+				01B2E39B1D8E2E1700D292C8 /* XFObject.m in Sources */,
+				01B2E3A51D8E2EC200D292C8 /* XFModel.m in Sources */,
 				01BBC89B1D87C41F00689BFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,11 +705,15 @@
 		};
 		01BBC8C71D87C41F00689BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDCD8E1ED43D48629A1B0A2F /* Pods-XF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = XF/PrefixHeader.pch;
 				INFOPLIST_FILE = XF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.free.XF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,11 +722,15 @@
 		};
 		01BBC8C81D87C41F00689BFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C73E134EA0202F1A52BFE85B /* Pods-XF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = XF/PrefixHeader.pch;
 				INFOPLIST_FILE = XF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.free.XF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +804,7 @@
 				01BBC8C81D87C41F00689BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01BBC8C91D87C41F00689BFF /* Build configuration list for PBXNativeTarget "XFTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +813,7 @@
 				01BBC8CB1D87C41F00689BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01BBC8CC1D87C41F00689BFF /* Build configuration list for PBXNativeTarget "XFUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +822,7 @@
 				01BBC8CE1D87C41F00689BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
