@@ -26,6 +26,8 @@
 		01BBC8AC1D87C41F00689BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BBC8AA1D87C41F00689BFF /* LaunchScreen.storyboard */; };
 		01BBC8B71D87C41F00689BFF /* XFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC8B61D87C41F00689BFF /* XFTests.m */; };
 		01BBC8C21D87C41F00689BFF /* XFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC8C11D87C41F00689BFF /* XFUITests.m */; };
+		81A6B7911DAF8C610057D302 /* payViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A6B78F1DAF8C610057D302 /* payViewController.m */; };
+		81A6B7921DAF8C610057D302 /* payViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A6B7901DAF8C610057D302 /* payViewController.xib */; };
 		C3E5A337AFA98E1B984AA172 /* libPods-XF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD90BFE34D4A5FFF50ABBEDB /* libPods-XF.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,9 @@
 		01BBC8BD1D87C41F00689BFF /* XFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBC8C11D87C41F00689BFF /* XFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFUITests.m; sourceTree = "<group>"; };
 		01BBC8C31D87C41F00689BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81A6B78E1DAF8C610057D302 /* payViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payViewController.h; sourceTree = "<group>"; };
+		81A6B78F1DAF8C610057D302 /* payViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payViewController.m; sourceTree = "<group>"; };
+		81A6B7901DAF8C610057D302 /* payViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = payViewController.xib; sourceTree = "<group>"; };
 		C73E134EA0202F1A52BFE85B /* Pods-XF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XF.release.xcconfig"; path = "Pods/Target Support Files/Pods-XF/Pods-XF.release.xcconfig"; sourceTree = "<group>"; };
 		DDCD8E1ED43D48629A1B0A2F /* Pods-XF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XF/Pods-XF.debug.xcconfig"; sourceTree = "<group>"; };
 		FD90BFE34D4A5FFF50ABBEDB /* libPods-XF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XF.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +229,9 @@
 		01B2E38F1D8E2E1700D292C8 /* PayService */ = {
 			isa = PBXGroup;
 			children = (
+				81A6B78E1DAF8C610057D302 /* payViewController.h */,
+				81A6B78F1DAF8C610057D302 /* payViewController.m */,
+				81A6B7901DAF8C610057D302 /* payViewController.xib */,
 			);
 			path = PayService;
 			sourceTree = "<group>";
@@ -436,7 +444,7 @@
 		01BBC88E1D87C41F00689BFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = free;
 				TargetAttributes = {
 					01BBC8951D87C41F00689BFF = {
@@ -481,6 +489,7 @@
 				01BBC8AC1D87C41F00689BFF /* LaunchScreen.storyboard in Resources */,
 				01BBC8A91D87C41F00689BFF /* Assets.xcassets in Resources */,
 				01BBC8A41D87C41F00689BFF /* Main.storyboard in Resources */,
+				81A6B7921DAF8C610057D302 /* payViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +565,7 @@
 				01B2E39C1D8E2E1700D292C8 /* DeviceUDID.m in Sources */,
 				01B2E39D1D8E2E1700D292C8 /* XFConfig.m in Sources */,
 				01BBC8A11D87C41F00689BFF /* ViewController.m in Sources */,
+				81A6B7911DAF8C610057D302 /* payViewController.m in Sources */,
 				01B2E3A11D8E2E1700D292C8 /* XFHelper.m in Sources */,
 				01B2E3A81D8E2EEE00D292C8 /* XFUser.m in Sources */,
 				01B2E39F1D8E2E1700D292C8 /* XFNetEngine.m in Sources */,
@@ -634,8 +644,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -657,7 +669,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -678,8 +690,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -695,7 +709,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
