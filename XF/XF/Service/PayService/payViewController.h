@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <StoreKit/StoreKit.h>
 
-@interface payViewController : UIViewController<SKPaymentTransactionObserver,SKProductsRequestDelegate>
+@interface payViewController : UIViewController
 
 @end

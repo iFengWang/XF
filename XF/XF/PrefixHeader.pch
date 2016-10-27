@@ -13,6 +13,7 @@
 #import "XFObject.h"
 #import "XFConfig.h"
 #import "XFBaseViewController.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 //常量的定义----------------------------------------------------------------------
 

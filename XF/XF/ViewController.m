@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "payViewController.h"
 
 @interface ViewController ()
+- (IBAction)onButtonClick:(id)sender;
 
 @end
 
@@ -16,12 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 -(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
@@ -33,4 +35,17 @@
 //    objc_object;
 }
 
+- (IBAction)onButtonClick:(id)sender {
+    switch ([sender tag]) {
+        case 1:
+        {
+            payViewController * payVC = [[payViewController alloc]init];
+            [self.navigationController pushViewController:payVC animated:YES];
+        }
+        break;
+            
+        default:
+            break;
+    }
+}
 @end
