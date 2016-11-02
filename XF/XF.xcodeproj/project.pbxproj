@@ -29,6 +29,8 @@
 		811BD0781DB8BE6300234CE8 /* payService.m in Sources */ = {isa = PBXBuildFile; fileRef = 811BD0771DB8BE6300234CE8 /* payService.m */; };
 		811BD07B1DB8E7D300234CE8 /* IAPPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 811BD07A1DB8E7D300234CE8 /* IAPPayManager.m */; };
 		813F93E51DB5F8F700722E22 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F93E41DB5F8F700722E22 /* StoreKit.framework */; };
+		818594901DC7461100C7E4FD /* XFWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185948F1DC7461100C7E4FD /* XFWebViewController.m */; };
+		818594921DC747D000C7E4FD /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 818594911DC747D000C7E4FD /* test.html */; };
 		819D7BF41DC0FDAD00261CD1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D7BF31DC0FDAD00261CD1 /* LoginViewController.m */; };
 		81A6B7911DAF8C610057D302 /* payViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A6B78F1DAF8C610057D302 /* payViewController.m */; };
 		81A6B7921DAF8C610057D302 /* payViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A6B7901DAF8C610057D302 /* payViewController.xib */; };
@@ -96,6 +98,9 @@
 		811BD0791DB8E7D300234CE8 /* IAPPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPPayManager.h; sourceTree = "<group>"; };
 		811BD07A1DB8E7D300234CE8 /* IAPPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPPayManager.m; sourceTree = "<group>"; };
 		813F93E41DB5F8F700722E22 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8185948E1DC7461100C7E4FD /* XFWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFWebViewController.h; sourceTree = "<group>"; };
+		8185948F1DC7461100C7E4FD /* XFWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFWebViewController.m; sourceTree = "<group>"; };
+		818594911DC747D000C7E4FD /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		819D7BF21DC0FDAD00261CD1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		819D7BF31DC0FDAD00261CD1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		81A6B78E1DAF8C610057D302 /* payViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payViewController.h; sourceTree = "<group>"; };
@@ -298,6 +303,8 @@
 			children = (
 				01B2E3981D8E2E1700D292C8 /* XFHelper.h */,
 				01B2E3991D8E2E1700D292C8 /* XFHelper.m */,
+				8185948E1DC7461100C7E4FD /* XFWebViewController.h */,
+				8185948F1DC7461100C7E4FD /* XFWebViewController.m */,
 			);
 			path = UtilService;
 			sourceTree = "<group>";
@@ -357,6 +364,7 @@
 				01BBC8A51D87C41F00689BFF /* XF.xcdatamodeld */,
 				01BBC89A1D87C41F00689BFF /* main.m */,
 				01B2E36A1D8CFA2000D292C8 /* PrefixHeader.pch */,
+				818594911DC747D000C7E4FD /* test.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -517,6 +525,7 @@
 				01BBC8AC1D87C41F00689BFF /* LaunchScreen.storyboard in Resources */,
 				01BBC8A91D87C41F00689BFF /* Assets.xcassets in Resources */,
 				01BBC8A41D87C41F00689BFF /* Main.storyboard in Resources */,
+				818594921DC747D000C7E4FD /* test.html in Resources */,
 				81A6B7921DAF8C610057D302 /* payViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +612,7 @@
 				01B2E39E1D8E2E1700D292C8 /* XFApi.m in Sources */,
 				01B2E39A1D8E2E1700D292C8 /* XFBaseViewController.m in Sources */,
 				01BBC8A71D87C41F00689BFF /* XF.xcdatamodeld in Sources */,
+				818594901DC7461100C7E4FD /* XFWebViewController.m in Sources */,
 				01BBC89E1D87C41F00689BFF /* AppDelegate.m in Sources */,
 				819D7BF41DC0FDAD00261CD1 /* LoginViewController.m in Sources */,
 				01B2E39B1D8E2E1700D292C8 /* XFObject.m in Sources */,
@@ -762,7 +772,7 @@
 				INFOPLIST_FILE = XF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.free.XF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.f4.benben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -783,7 +793,7 @@
 				INFOPLIST_FILE = XF/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.free.XF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.f4.benben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
