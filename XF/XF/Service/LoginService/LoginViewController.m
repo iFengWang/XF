@@ -8,10 +8,11 @@
 
 #import "LoginViewController.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *txtMobile;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 @property (weak, nonatomic) IBOutlet UIButton *butLogin;
+@property (weak, nonatomic) UITextField * txtTest;
 
 @end
 
@@ -19,7 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self signal];
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    [self.view addSubview:self.txtTest];
+    [self setupSignal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +43,7 @@
 */
 
 #pragma mark - signal manage
-- (void)signal {
+- (void)setupSignal {
     
     //手机输入框信号
     RACSignal * mobileSignal = [self.txtMobile.rac_textSignal map:^id(NSString* value) {
@@ -81,6 +86,26 @@
         
         return nil;
     }];
+    
+    [s subscribeNext:^(id x) {
+        //
+    }];
+}
+
+#pragma mark - UITextField Delegate
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSLog(@"str.......%@",string);
+    return YES;
+}
+
+#pragma mark - getter & setter
+-(UITextField *)txtTest {
+    UITextField * t = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, [UIScreen mainScreen].bounds.size.width-20*2, 30)];
+    t.delegate = self;
+    t.keyboardType = UIKeyboardTypeNumberPad;
+    [t setBorderStyle:UITextBorderStyleLine];
+    [t setBackgroundColor:[UIColor yellowColor]];
+    return  t;
 }
 
 @end

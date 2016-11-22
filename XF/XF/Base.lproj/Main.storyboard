@@ -19,58 +19,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="933-3p-LOO">
-                                <color key="backgroundColor" red="0.08557453617302177" green="0.58012820512820507" blue="0.088861073738937299" alpha="1" colorSpace="calibratedRGB"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQW-21-94n">
+                                <frame key="frameInset" minY="58" width="375" height="609"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="933-3p-LOO">
+                                        <rect key="frame" x="66" y="-31" width="243" height="50"/>
+                                        <color key="backgroundColor" red="0.08557453617302177" green="0.58012820512820507" blue="0.088861073738937299" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hQU-gZ-Xec"/>
+                                        </constraints>
+                                        <state key="normal" title="加载支付视图">
+                                            <color key="titleColor" red="0.95214998915683946" green="1" blue="0.96403491402278663" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aJ-0v-lAw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFW-CZ-2uz">
+                                        <rect key="frame" x="66" y="27" width="243" height="50"/>
+                                        <color key="backgroundColor" red="0.085574536170000007" green="0.58012820509999996" blue="0.088861073740000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cZ4-gR-Qn9"/>
+                                        </constraints>
+                                        <state key="normal" title="登录逻辑">
+                                            <color key="titleColor" red="0.95214998920000005" green="1" blue="0.96403491399999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7H-Ro-qkU"/>
+                                            <segue destination="eV5-zG-H0A" kind="show" id="Oxn-k7-m5p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnU-IW-MXa">
+                                        <rect key="frame" x="66" y="85" width="243" height="50"/>
+                                        <color key="backgroundColor" red="0.085574536170000007" green="0.58012820509999996" blue="0.088861073740000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FCl-m3-ZlA"/>
+                                        </constraints>
+                                        <state key="normal" title="WEB">
+                                            <color key="titleColor" red="0.95214998920000005" green="1" blue="0.96403491399999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTT-NC-5jE"/>
+                                            <segue destination="t9L-mV-49M" kind="show" id="gHS-e0-LLO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="hQU-gZ-Xec"/>
+                                    <constraint firstItem="WFW-CZ-2uz" firstAttribute="top" secondItem="933-3p-LOO" secondAttribute="bottom" constant="8" id="0oY-e0-pNz"/>
+                                    <constraint firstItem="vnU-IW-MXa" firstAttribute="height" secondItem="WFW-CZ-2uz" secondAttribute="height" id="1R5-VD-YZB"/>
+                                    <constraint firstItem="WFW-CZ-2uz" firstAttribute="width" secondItem="933-3p-LOO" secondAttribute="width" id="3st-zN-8M7"/>
+                                    <constraint firstItem="vnU-IW-MXa" firstAttribute="width" secondItem="WFW-CZ-2uz" secondAttribute="width" id="4E6-0r-wFZ"/>
+                                    <constraint firstItem="vnU-IW-MXa" firstAttribute="centerX" secondItem="WFW-CZ-2uz" secondAttribute="centerX" id="FZb-9e-62m"/>
+                                    <constraint firstItem="vnU-IW-MXa" firstAttribute="top" secondItem="WFW-CZ-2uz" secondAttribute="bottom" constant="8" id="etO-VI-fNu"/>
+                                    <constraint firstItem="WFW-CZ-2uz" firstAttribute="centerX" secondItem="933-3p-LOO" secondAttribute="centerX" id="hll-sM-L6K"/>
+                                    <constraint firstItem="933-3p-LOO" firstAttribute="leading" secondItem="fQW-21-94n" secondAttribute="leadingMargin" constant="58" id="qSd-av-Ez6"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="933-3p-LOO" secondAttribute="trailing" constant="58" id="srb-ip-AvG"/>
                                 </constraints>
-                                <state key="normal" title="加载支付视图">
-                                    <color key="titleColor" red="0.95214998915683946" green="1" blue="0.96403491402278663" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aJ-0v-lAw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFW-CZ-2uz">
-                                <color key="backgroundColor" red="0.085574536170000007" green="0.58012820509999996" blue="0.088861073740000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="cZ4-gR-Qn9"/>
-                                </constraints>
-                                <state key="normal" title="登录逻辑">
-                                    <color key="titleColor" red="0.95214998920000005" green="1" blue="0.96403491399999997" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7H-Ro-qkU"/>
-                                    <segue destination="eV5-zG-H0A" kind="show" id="Oxn-k7-m5p"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnU-IW-MXa">
-                                <color key="backgroundColor" red="0.085574536170000007" green="0.58012820509999996" blue="0.088861073740000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="FCl-m3-ZlA"/>
-                                </constraints>
-                                <state key="normal" title="WEB">
-                                    <color key="titleColor" red="0.95214998920000005" green="1" blue="0.96403491399999997" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTT-NC-5jE"/>
-                                    <segue destination="t9L-mV-49M" kind="show" id="gHS-e0-LLO"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="WFW-CZ-2uz" firstAttribute="top" secondItem="933-3p-LOO" secondAttribute="bottom" constant="8" id="7NC-8Z-0PP"/>
-                            <constraint firstItem="WFW-CZ-2uz" firstAttribute="centerX" secondItem="933-3p-LOO" secondAttribute="centerX" id="8s8-ou-yc6"/>
-                            <constraint firstItem="vnU-IW-MXa" firstAttribute="top" secondItem="WFW-CZ-2uz" secondAttribute="bottom" constant="8" id="FwD-56-uzI"/>
-                            <constraint firstItem="vnU-IW-MXa" firstAttribute="centerX" secondItem="WFW-CZ-2uz" secondAttribute="centerX" id="HKP-4V-aon"/>
-                            <constraint firstItem="vnU-IW-MXa" firstAttribute="height" secondItem="WFW-CZ-2uz" secondAttribute="height" id="Ouc-1z-4Q2"/>
-                            <constraint firstItem="933-3p-LOO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="QKF-Ai-nfM"/>
-                            <constraint firstItem="WFW-CZ-2uz" firstAttribute="width" secondItem="933-3p-LOO" secondAttribute="width" id="Rba-OC-JoY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="933-3p-LOO" secondAttribute="trailing" constant="50" id="Unh-b6-Tvm"/>
-                            <constraint firstItem="933-3p-LOO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="oBh-i5-PLB"/>
-                            <constraint firstItem="vnU-IW-MXa" firstAttribute="width" secondItem="WFW-CZ-2uz" secondAttribute="width" id="qSH-uM-hqe"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mJM-tQ-enV"/>
                 </viewController>
