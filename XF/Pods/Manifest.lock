@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - JSPatch (1.1):
+    - JSPatch/Core (= 1.1)
+  - JSPatch/Core (1.1)
   - ReactiveCocoa (2.1.8):
     - ReactiveCocoa/Core (= 2.1.8)
     - ReactiveCocoa/no-arc (= 2.1.8)
@@ -23,12 +26,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - JSPatch (~> 1.0)
   - ReactiveCocoa (~> 2.1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  JSPatch: ade285ad1d8f06146ed6054a39cef87509453299
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
 
-PODFILE CHECKSUM: 88ad2e8708cf965e7154175dc8d4dcfc0c7415f7
+PODFILE CHECKSUM: 90b91b912ace7641c9f3f19b4c1589db59b36398
 
 COCOAPODS: 1.1.1

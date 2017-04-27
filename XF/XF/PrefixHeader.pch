@@ -10,32 +10,33 @@
 #define PrefixHeader_pch
 
 //引入的头文件--------------------------------------------------------------------
-#import "XFObject.h"
+#import "NSObject+Extent.h"
 #import "XFConfig.h"
 #import "XFBaseViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "JSPatchManager.h"
 
 //常量的定义----------------------------------------------------------------------
 
 #if DEBUG
-    #define     kServerURL                           @"http://192.168.0.100"                           //测试服务器
-    #define     DLog(fmt, ...) {NSLog((@"[Line:%d] - " fmt), __LINE__, ##__VA_ARGS__);}
+    #define     kServerURL                          @"http://192.168.0.100"                             //测试服务器
+    #define     DLog(fmt, ...)                      {NSLog((@"[Line:%d] - " fmt), __LINE__, ##__VA_ARGS__);}
 #else
-    #define     kServerURL                           @"http://www.baidu.com"                          //生产服务器
+    #define     kServerURL                          @"http://www.baidu.com"                             //生产服务器
     #define     DLog(...) {}
 #endif
 
-#define     kAppIDInAppStore                         @"640970171"                                    //在AppleStore上的ID
+#define     kAppIDInAppStore                        @"640970171"                                        //在AppleStore上的ID
 
 
 
 //通知类型------------------------------------------------------------------------
 
-#define     kNotifyNetStatusChange              @"XF.global.netstatuschange"                            //网络变化通知
-#define     kNotifyUserRegistered                @"XF.global.userregistered"                              //用户注册通知
-#define     kNotifyUserLogined                  @"XF.global.userlogined"                                 //用户登录通知
-#define     kNotifyUserLogouted                 @"XF.global.userlogouted"                               //用户登出通知
-#define     kNotifyAppUpdate                   @"XF.global.appupdate"                                  //APP升级通知
+#define     kNotifyNetStatusChange                  @"XF.global.netstatuschange"                        //网络变化通知
+#define     kNotifyUserRegistered                   @"XF.global.userregistered"                         //用户注册通知
+#define     kNotifyUserLogined                      @"XF.global.userlogined"                            //用户登录通知
+#define     kNotifyUserLogouted                     @"XF.global.userlogouted"                           //用户登出通知
+#define     kNotifyAppUpdate                        @"XF.global.appupdate"                              //APP升级通知
 
 #define     kNotifyTimeInterval                 60*60*24*2                                              //本地通知频率2天
 
@@ -45,7 +46,7 @@
 
 //block的回调--------------------------------------------------------------------
 
-typedef void (^onReturnBlock)(id result, NSError *error);               //server端返回数据后的回调
-typedef void (^onProgressBlock)(double value);                        //上传或下载的回调
+typedef void (^onReturnBlock)(id result, NSError *error);                                   //server端返回数据后的回调
+typedef void (^onProgressBlock)(double value);                                              //上传或下载的回调
 
 #endif
