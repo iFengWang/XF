@@ -13,6 +13,8 @@
 		01BBC8A91D87C41F00689BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BBC8A81D87C41F00689BFF /* Assets.xcassets */; };
 		01BBC8B71D87C41F00689BFF /* XFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC8B61D87C41F00689BFF /* XFTests.m */; };
 		01BBC8C21D87C41F00689BFF /* XFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BBC8C11D87C41F00689BFF /* XFUITests.m */; };
+		810A90E51EB2F27600A19C43 /* XFAccountApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 810A90E41EB2F27600A19C43 /* XFAccountApiManager.m */; };
+		810A90EA1EB2F33500A19C43 /* XFUpDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 810A90E91EB2F33500A19C43 /* XFUpDownManager.m */; };
 		813F93E51DB5F8F700722E22 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F93E41DB5F8F700722E22 /* StoreKit.framework */; };
 		81FC31D91E96902E005C39A6 /* NSObject+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31B01E96902E005C39A6 /* NSObject+Extent.m */; };
 		81FC31DA1E96902E005C39A6 /* XFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31B21E96902E005C39A6 /* XFBaseViewController.m */; };
@@ -20,8 +22,7 @@
 		81FC31DC1E96902E005C39A6 /* XFConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31B71E96902E005C39A6 /* XFConfig.m */; };
 		81FC31DD1E96902E005C39A6 /* JSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31BA1E96902E005C39A6 /* JSPatchManager.m */; };
 		81FC31DE1E96902E005C39A6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 81FC31BB1E96902E005C39A6 /* main.js */; };
-		81FC31E01E96902E005C39A6 /* XFApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31C11E96902E005C39A6 /* XFApi.m */; };
-		81FC31E11E96902E005C39A6 /* XFNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31C31E96902E005C39A6 /* XFNetEngine.m */; };
+		81FC31E11E96902E005C39A6 /* XFApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31C31E96902E005C39A6 /* XFApiManager.m */; };
 		81FC31E21E96902E005C39A6 /* IAPPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31C61E96902E005C39A6 /* IAPPayManager.m */; };
 		81FC31E31E96902E005C39A6 /* payService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31C81E96902E005C39A6 /* payService.m */; };
 		81FC31E41E96902E005C39A6 /* payViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31CA1E96902E005C39A6 /* payViewController.m */; };
@@ -70,6 +71,10 @@
 		01BBC8BD1D87C41F00689BFF /* XFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BBC8C11D87C41F00689BFF /* XFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFUITests.m; sourceTree = "<group>"; };
 		01BBC8C31D87C41F00689BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		810A90E31EB2F27600A19C43 /* XFAccountApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFAccountApiManager.h; sourceTree = "<group>"; };
+		810A90E41EB2F27600A19C43 /* XFAccountApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFAccountApiManager.m; sourceTree = "<group>"; };
+		810A90E81EB2F33500A19C43 /* XFUpDownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFUpDownManager.h; sourceTree = "<group>"; };
+		810A90E91EB2F33500A19C43 /* XFUpDownManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFUpDownManager.m; sourceTree = "<group>"; };
 		813F93E41DB5F8F700722E22 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		81A310DA1DE6C3D900B4B08F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		81FC31AF1E96902E005C39A6 /* NSObject+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extent.h"; sourceTree = "<group>"; };
@@ -83,10 +88,8 @@
 		81FC31B91E96902E005C39A6 /* JSPatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchManager.h; sourceTree = "<group>"; };
 		81FC31BA1E96902E005C39A6 /* JSPatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchManager.m; sourceTree = "<group>"; };
 		81FC31BB1E96902E005C39A6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		81FC31C01E96902E005C39A6 /* XFApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFApi.h; sourceTree = "<group>"; };
-		81FC31C11E96902E005C39A6 /* XFApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFApi.m; sourceTree = "<group>"; };
-		81FC31C21E96902E005C39A6 /* XFNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFNetEngine.h; sourceTree = "<group>"; };
-		81FC31C31E96902E005C39A6 /* XFNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFNetEngine.m; sourceTree = "<group>"; };
+		81FC31C21E96902E005C39A6 /* XFApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFApiManager.h; sourceTree = "<group>"; };
+		81FC31C31E96902E005C39A6 /* XFApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFApiManager.m; sourceTree = "<group>"; };
 		81FC31C51E96902E005C39A6 /* IAPPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPPayManager.h; sourceTree = "<group>"; };
 		81FC31C61E96902E005C39A6 /* IAPPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPPayManager.m; sourceTree = "<group>"; };
 		81FC31C71E96902E005C39A6 /* payService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payService.h; sourceTree = "<group>"; };
@@ -215,6 +218,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		810A90E21EB2F25400A19C43 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				810A90E31EB2F27600A19C43 /* XFAccountApiManager.h */,
+				810A90E41EB2F27600A19C43 /* XFAccountApiManager.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		810A90E61EB2F31400A19C43 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		810A90E71EB2F31400A19C43 /* UpDown */ = {
+			isa = PBXGroup;
+			children = (
+				810A90E81EB2F33500A19C43 /* XFUpDownManager.h */,
+				810A90E91EB2F33500A19C43 /* XFUpDownManager.m */,
+			);
+			path = UpDown;
+			sourceTree = "<group>";
+		};
 		81FC31AC1E968F2F005C39A6 /* Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,10 +306,11 @@
 		81FC31BF1E96902E005C39A6 /* NetModule */ = {
 			isa = PBXGroup;
 			children = (
-				81FC31C01E96902E005C39A6 /* XFApi.h */,
-				81FC31C11E96902E005C39A6 /* XFApi.m */,
-				81FC31C21E96902E005C39A6 /* XFNetEngine.h */,
-				81FC31C31E96902E005C39A6 /* XFNetEngine.m */,
+				810A90E61EB2F31400A19C43 /* Log */,
+				810A90E71EB2F31400A19C43 /* UpDown */,
+				810A90E21EB2F25400A19C43 /* Account */,
+				81FC31C21E96902E005C39A6 /* XFApiManager.h */,
+				81FC31C31E96902E005C39A6 /* XFApiManager.m */,
 			);
 			path = NetModule;
 			sourceTree = "<group>";
@@ -583,7 +612,7 @@
 				81FC31D91E96902E005C39A6 /* NSObject+Extent.m in Sources */,
 				81FC31F41E9690FD005C39A6 /* XFDefine.m in Sources */,
 				81FC31E41E96902E005C39A6 /* payViewController.m in Sources */,
-				81FC31E01E96902E005C39A6 /* XFApi.m in Sources */,
+				810A90EA1EB2F33500A19C43 /* XFUpDownManager.m in Sources */,
 				81FC31F31E9690FD005C39A6 /* ViewController.m in Sources */,
 				81FC31E71E96902E005C39A6 /* XFStackViewController.m in Sources */,
 				81FC31DB1E96902E005C39A6 /* DeviceUDID.m in Sources */,
@@ -591,9 +620,10 @@
 				81FC31E31E96902E005C39A6 /* payService.m in Sources */,
 				01BBC89B1D87C41F00689BFF /* main.m in Sources */,
 				81FC31E61E96902E005C39A6 /* XFCacheManager.m in Sources */,
-				81FC31E11E96902E005C39A6 /* XFNetEngine.m in Sources */,
+				81FC31E11E96902E005C39A6 /* XFApiManager.m in Sources */,
 				81FC31DD1E96902E005C39A6 /* JSPatchManager.m in Sources */,
 				81FC31EA1E96902E005C39A6 /* XFWebViewController.m in Sources */,
+				810A90E51EB2F27600A19C43 /* XFAccountApiManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
