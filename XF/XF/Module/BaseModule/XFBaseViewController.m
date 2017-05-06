@@ -16,32 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     kNotifyAddObserver(kNotifyNetStatusChange, @selector(onReciveNotify:));
     kNotifyAddObserver(kNotifyAppUpdate, @selector(onReciveNotify:));
     kNotifyAddObserver(kNotifyUserRegistered, @selector(onReciveNotify:));
     kNotifyAddObserver(kNotifyUserLogined, @selector(onReciveNotify:));
     kNotifyAddObserver(kNotifyUserLogouted, @selector(onReciveNotify:));
-//    kNotifyAddObserver(UIApplicationDidEnterBackgroundNotification, @selector(onReciveNotify:));
-//    kNotifyAddObserver(UIApplicationWillEnterForegroundNotification, @selector(onReciveNotify:));
+    kNotifyAddObserver(UIApplicationDidEnterBackgroundNotification, @selector(onReciveNotify:));
+    kNotifyAddObserver(UIApplicationWillEnterForegroundNotification, @selector(onReciveNotify:));
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
 
 #pragma mark - Notification
 - (void)onReciveNotify:(NSNotification*)info
@@ -86,17 +73,5 @@
     kNotifyRemoveObserver(UIApplicationDidEnterBackgroundNotification);
     kNotifyRemoveObserver(UIApplicationWillEnterForegroundNotification);
 }
-
-
-//-(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-//    return nil;
-//}
-
-//-(void)forwardInvocation:(NSInvocation *)anInvocation {
-//    objc_class;
-//    objc_object;
-//}
-
-
 
 @end

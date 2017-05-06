@@ -12,7 +12,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtMobile;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 @property (weak, nonatomic) IBOutlet UIButton *butLogin;
-@property (weak, nonatomic) UITextField * txtTest;
 
 @end
 
@@ -20,31 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-    [self.view addSubview:self.txtTest];
     [self setupSignal];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark - signal manage
 - (void)setupSignal {
     
+    @weakify(self);
     //手机输入框信号
     RACSignal * mobileSignal = [self.txtMobile.rac_textSignal map:^id(NSString* value) {
         return @(value.length>3);
@@ -66,6 +52,7 @@
         return @([a boolValue] && [b boolValue]) ;
     }];
     [buttonSignal subscribeNext:^(NSNumber* x) {
+        @strongify(self);
         self.butLogin.enabled = [x boolValue];
         self.butLogin.backgroundColor = [x boolValue] ? [UIColor greenColor] : [UIColor redColor] ;
     }];
@@ -90,22 +77,6 @@
     [s subscribeNext:^(id x) {
         //
     }];
-}
-
-#pragma mark - UITextField Delegate
--(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    NSLog(@"str.......%@",string);
-    return YES;
-}
-
-#pragma mark - getter & setter
--(UITextField *)txtTest {
-    UITextField * t = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, [UIScreen mainScreen].bounds.size.width-20*2, 30)];
-    t.delegate = self;
-    t.keyboardType = UIKeyboardTypeNumberPad;
-    [t setBorderStyle:UITextBorderStyleLine];
-    [t setBackgroundColor:[UIColor yellowColor]];
-    return  t;
 }
 
 @end

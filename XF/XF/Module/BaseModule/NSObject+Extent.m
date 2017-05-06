@@ -7,8 +7,27 @@
 //
 
 #import "NSObject+Extent.h"
+#import "Aspects.h"
 
 @implementation NSObject (Extent)
+
++ (void)load {
+    
+    [UIViewController aspect_hookSelector:@selector(viewWillAppear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
+        NSLog(@"Appear:---viewWillAppear---> %@", NSStringFromClass([aspectInfo.instance class]));
+    } error:nil];
+    
+    
+    [UIViewController aspect_hookSelector:@selector(viewWillDisappear:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
+        NSLog(@"Appear:---viewWillDisappear---> %@", NSStringFromClass([aspectInfo.instance class]));
+    } error:nil];
+    
+    
+    [UIViewController aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
+        NSLog(@"Appear:---dealloc---> %@", NSStringFromClass([aspectInfo.instance class]));
+    } error:nil];
+    
+}
 
 - (id)valueForUndefinedKey:(NSString *)key {
     NSLog(@"get--出现异常，该key不存在%@",key);

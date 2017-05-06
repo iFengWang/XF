@@ -16,6 +16,12 @@
 		810A90E51EB2F27600A19C43 /* XFAccountApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 810A90E41EB2F27600A19C43 /* XFAccountApiManager.m */; };
 		810A90EA1EB2F33500A19C43 /* XFUpDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 810A90E91EB2F33500A19C43 /* XFUpDownManager.m */; };
 		813F93E51DB5F8F700722E22 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813F93E41DB5F8F700722E22 /* StoreKit.framework */; };
+		81C47CDE1EBC7A8600712C0F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C47CDD1EBC7A8600712C0F /* RegisterViewController.m */; };
+		81C47CE11EBC7AB400712C0F /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C47CE01EBC7AB400712C0F /* ForgetPasswordViewController.m */; };
+		81C47CE41EBC7AF400712C0F /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C47CE31EBC7AF400712C0F /* LoginViewModel.m */; };
+		81C47CE71EBC7B0C00712C0F /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C47CE61EBC7B0C00712C0F /* RegisterViewModel.m */; };
+		81C47CEA1EBC7B1B00712C0F /* ForgetPasswordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C47CE91EBC7B1B00712C0F /* ForgetPasswordViewModel.m */; };
+		81C47CED1EBC7B4A00712C0F /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C47CEC1EBC7B4A00712C0F /* AccountManager.m */; };
 		81FC31D91E96902E005C39A6 /* NSObject+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31B01E96902E005C39A6 /* NSObject+Extent.m */; };
 		81FC31DA1E96902E005C39A6 /* XFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31B21E96902E005C39A6 /* XFBaseViewController.m */; };
 		81FC31DB1E96902E005C39A6 /* DeviceUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31B51E96902E005C39A6 /* DeviceUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -35,7 +41,6 @@
 		81FC31F31E9690FD005C39A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31EF1E9690FD005C39A6 /* ViewController.m */; };
 		81FC31F41E9690FD005C39A6 /* XFDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31F11E9690FD005C39A6 /* XFDefine.m */; };
 		81FC31FF1E9692F9005C39A6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FC31FE1E9692F9005C39A6 /* LoginViewController.m */; };
-		81FC32021E969383005C39A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FC32001E969383005C39A6 /* Main.storyboard */; };
 		C3E5A337AFA98E1B984AA172 /* libPods-XF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD90BFE34D4A5FFF50ABBEDB /* libPods-XF.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +82,19 @@
 		810A90E91EB2F33500A19C43 /* XFUpDownManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFUpDownManager.m; sourceTree = "<group>"; };
 		813F93E41DB5F8F700722E22 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		81A310DA1DE6C3D900B4B08F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		81C47CDC1EBC7A8600712C0F /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		81C47CDD1EBC7A8600712C0F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		81C47CDF1EBC7AB400712C0F /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		81C47CE01EBC7AB400712C0F /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
+		81C47CE21EBC7AF400712C0F /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		81C47CE31EBC7AF400712C0F /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		81C47CE51EBC7B0C00712C0F /* RegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
+		81C47CE61EBC7B0C00712C0F /* RegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
+		81C47CE81EBC7B1B00712C0F /* ForgetPasswordViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewModel.h; sourceTree = "<group>"; };
+		81C47CE91EBC7B1B00712C0F /* ForgetPasswordViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewModel.m; sourceTree = "<group>"; };
+		81C47CEB1EBC7B4A00712C0F /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		81C47CEC1EBC7B4A00712C0F /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		81C47CEE1EBD4ACB00712C0F /* XFRouterDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFRouterDefine.h; sourceTree = "<group>"; };
 		81FC31AF1E96902E005C39A6 /* NSObject+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extent.h"; sourceTree = "<group>"; };
 		81FC31B01E96902E005C39A6 /* NSObject+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extent.m"; sourceTree = "<group>"; };
 		81FC31B11E96902E005C39A6 /* XFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFBaseViewController.h; sourceTree = "<group>"; };
@@ -112,7 +130,6 @@
 		81FC31F11E9690FD005C39A6 /* XFDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDefine.m; sourceTree = "<group>"; };
 		81FC31FD1E9692F9005C39A6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		81FC31FE1E9692F9005C39A6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		81FC32011E969383005C39A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C73E134EA0202F1A52BFE85B /* Pods-XF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XF.release.xcconfig"; path = "Pods/Target Support Files/Pods-XF/Pods-XF.release.xcconfig"; sourceTree = "<group>"; };
 		DDCD8E1ED43D48629A1B0A2F /* Pods-XF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XF/Pods-XF.debug.xcconfig"; sourceTree = "<group>"; };
 		FD90BFE34D4A5FFF50ABBEDB /* libPods-XF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XF.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +200,7 @@
 			children = (
 				01BBC89C1D87C41F00689BFF /* AppDelegate.h */,
 				01BBC89D1D87C41F00689BFF /* AppDelegate.m */,
+				81C47CEE1EBD4ACB00712C0F /* XFRouterDefine.h */,
 				01B2E36A1D8CFA2000D292C8 /* PrefixHeader.pch */,
 				01BBC8A51D87C41F00689BFF /* XF.xcdatamodeld */,
 				01BBC8AD1D87C41F00689BFF /* Info.plist */,
@@ -262,7 +280,6 @@
 		81FC31AD1E968F2F005C39A6 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				81FC32001E969383005C39A6 /* Main.storyboard */,
 				81FC31EE1E9690FD005C39A6 /* ViewController.h */,
 				81FC31EF1E9690FD005C39A6 /* ViewController.m */,
 				81FC31F01E9690FD005C39A6 /* XFDefine.h */,
@@ -374,6 +391,8 @@
 				81FC31FA1E9692DF005C39A6 /* View */,
 				81FC31FB1E9692DF005C39A6 /* ViewController */,
 				81FC31FC1E9692DF005C39A6 /* ViewModel */,
+				81C47CEB1EBC7B4A00712C0F /* AccountManager.h */,
+				81C47CEC1EBC7B4A00712C0F /* AccountManager.m */,
 			);
 			path = AccountModule;
 			sourceTree = "<group>";
@@ -397,6 +416,10 @@
 			children = (
 				81FC31FD1E9692F9005C39A6 /* LoginViewController.h */,
 				81FC31FE1E9692F9005C39A6 /* LoginViewController.m */,
+				81C47CDC1EBC7A8600712C0F /* RegisterViewController.h */,
+				81C47CDD1EBC7A8600712C0F /* RegisterViewController.m */,
+				81C47CDF1EBC7AB400712C0F /* ForgetPasswordViewController.h */,
+				81C47CE01EBC7AB400712C0F /* ForgetPasswordViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -404,6 +427,12 @@
 		81FC31FC1E9692DF005C39A6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				81C47CE21EBC7AF400712C0F /* LoginViewModel.h */,
+				81C47CE31EBC7AF400712C0F /* LoginViewModel.m */,
+				81C47CE51EBC7B0C00712C0F /* RegisterViewModel.h */,
+				81C47CE61EBC7B0C00712C0F /* RegisterViewModel.m */,
+				81C47CE81EBC7B1B00712C0F /* ForgetPasswordViewModel.h */,
+				81C47CE91EBC7B1B00712C0F /* ForgetPasswordViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -527,7 +556,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81FC31DE1E96902E005C39A6 /* main.js in Resources */,
-				81FC32021E969383005C39A6 /* Main.storyboard in Resources */,
 				01BBC8A91D87C41F00689BFF /* Assets.xcassets in Resources */,
 				81FC31E81E96902E005C39A6 /* test.html in Resources */,
 				81FC31E51E96902E005C39A6 /* payViewController.xib in Resources */,
@@ -611,18 +639,24 @@
 				81FC31E21E96902E005C39A6 /* IAPPayManager.m in Sources */,
 				81FC31D91E96902E005C39A6 /* NSObject+Extent.m in Sources */,
 				81FC31F41E9690FD005C39A6 /* XFDefine.m in Sources */,
+				81C47CE41EBC7AF400712C0F /* LoginViewModel.m in Sources */,
 				81FC31E41E96902E005C39A6 /* payViewController.m in Sources */,
 				810A90EA1EB2F33500A19C43 /* XFUpDownManager.m in Sources */,
 				81FC31F31E9690FD005C39A6 /* ViewController.m in Sources */,
+				81C47CDE1EBC7A8600712C0F /* RegisterViewController.m in Sources */,
 				81FC31E71E96902E005C39A6 /* XFStackViewController.m in Sources */,
 				81FC31DB1E96902E005C39A6 /* DeviceUDID.m in Sources */,
+				81C47CE71EBC7B0C00712C0F /* RegisterViewModel.m in Sources */,
 				01BBC89E1D87C41F00689BFF /* AppDelegate.m in Sources */,
+				81C47CED1EBC7B4A00712C0F /* AccountManager.m in Sources */,
 				81FC31E31E96902E005C39A6 /* payService.m in Sources */,
 				01BBC89B1D87C41F00689BFF /* main.m in Sources */,
 				81FC31E61E96902E005C39A6 /* XFCacheManager.m in Sources */,
 				81FC31E11E96902E005C39A6 /* XFApiManager.m in Sources */,
 				81FC31DD1E96902E005C39A6 /* JSPatchManager.m in Sources */,
+				81C47CEA1EBC7B1B00712C0F /* ForgetPasswordViewModel.m in Sources */,
 				81FC31EA1E96902E005C39A6 /* XFWebViewController.m in Sources */,
+				81C47CE11EBC7AB400712C0F /* ForgetPasswordViewController.m in Sources */,
 				810A90E51EB2F27600A19C43 /* XFAccountApiManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,17 +691,6 @@
 			targetProxy = 01BBC8BE1D87C41F00689BFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		81FC32001E969383005C39A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81FC32011E969383005C39A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		01BBC8C41D87C41F00689BFF /* Debug */ = {

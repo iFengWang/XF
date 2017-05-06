@@ -12,13 +12,13 @@
 @implementation XFApiManager
 
 + (id)sharedInstance {
-    static XFApiManager * _engine = nil;
+    static XFApiManager * _apiManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken,^{
-        _engine = [[XFApiManager alloc] initWithBaseURL:[NSURL URLWithString:kServerURL]];
-        [_engine addBascDataToHeader];
+        _apiManager = [[XFApiManager alloc] initWithBaseURL:[NSURL URLWithString:kServerURL]];
+        [_apiManager addBascDataToHeader];
     });
-    return _engine;
+    return _apiManager;
 }
 
 // Header中的基础数据
@@ -33,6 +33,29 @@
     [self.requestSerializer setValue:[config deviceName] forHTTPHeaderField:@"deviceid"];
     [self.requestSerializer setValue:[XFHelper dateToTimeStamp:[NSDate dateWithTimeIntervalSinceNow:0]] forHTTPHeaderField:@"timestamp"];
     [self.requestSerializer setValue:[config userToken] forHTTPHeaderField:@"authentication"];
+}
+
+
+- (void)postRequestWithRouter:(NSString*)router Param:(NSDictionary*)param Block:(returnBlock)block {
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.baseURL, router];
+    [self POST:urlString parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
+        //
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //
+    }];
+}
+
+- (void)getRequestWithRouter:(NSString*)router Param:(NSDictionary*)param Block:(returnBlock)block {
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.baseURL, router];
+    [self GET:urlString parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
+        //
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //
+    }];
 }
 
 @end

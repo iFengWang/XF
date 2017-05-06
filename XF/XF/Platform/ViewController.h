@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : XFBaseViewController
+@interface ViewController : UIViewController
 
 @end
 

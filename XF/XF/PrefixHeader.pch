@@ -14,7 +14,9 @@
 #import "XFConfig.h"
 #import "XFBaseViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 #import "JSPatchManager.h"
+#import "XFRouterDefine.h"
 
 //常量的定义----------------------------------------------------------------------
 
@@ -46,7 +48,10 @@
 
 //block的回调--------------------------------------------------------------------
 
-typedef void (^onReturnBlock)(id result, NSError *error);                                   //server端返回数据后的回调
-typedef void (^onProgressBlock)(double value);                                              //上传或下载的回调
-
+typedef void (^returnBlock)(id result, NSError *error);                                   //server端返回数据后的回调
+//typedef void (^progressBlock)(double value);                                              //上传或下载的回调
+//
+//typedef void (^progressBlock)(NSProgress * _Nonnull);                              //上传或下载的回调
+//typedef void (^successBlock)(NSURLSessionDataTask * _Nonnull, id _Nullable);
+//typedef void (^failBlock)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull);
 #endif

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "payViewController.h"
+#import "Masonry.h"
 
 @interface ViewController ()
 - (IBAction)onButtonClick:(id)sender;
@@ -18,52 +19,9 @@
 
 @implementation ViewController
 
-- (NSString *)str {
-    
-    __block NSString * vvv;
-    NSString* (^haha)() = ^{
-        vvv = @"abcdefg";
-        return vvv;
-    };
-    
-    return haha();
-    
-//    return _str;
-    
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:[self buildView]];
-    
-//    NSLog(@"str......%@",self.str);
-    
-//    NSArray * ary = @[@"111",@"222",@"333"];
-//    [ary enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        //
-//    }];
-    
-//    [self setValue:@"xiaofeng" forKey:@"name"];
-//    NSLog(@"name....%@", [self valueForKey:@"name"]);
-    
-//    NSMethodSignature *signature = [ViewController instanceMethodSignatureForSelector:@selector(run:)];
-//    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
-//    invocation.target = self;
-//    invocation.selector = @selector(run:);
-//    NSString *param = @"haha";
-//    [invocation setArgument:&param atIndex:2];
-//    [invocation invoke];
-}
-
-- (void)run:(id)p {
-    NSLog(@"..............%@",p);
-}
-
-- (UIView*)buildView {
-    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(10, 70, 50, 50)];
-    v.backgroundColor = [UIColor redColor];
-    return v;
+    self.view.backgroundColor = [UIColor grayColor];
 }
 
 - (void)didReceiveMemoryWarning {
