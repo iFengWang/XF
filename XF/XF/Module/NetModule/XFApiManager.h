@@ -14,6 +14,14 @@ typedef NS_ENUM (NSUInteger, XFError) {
     XFErrorParse = 1,               //解析错误
 };
 
+@class XFApiManager;
+/**
+ 数据转换协议
+ */
+@protocol XFTransformProtocol <NSObject>
+- (NSDictionary*)transformWithManager:(XFApiManager*)manager;
+@end
+
 @protocol XFApiManagerDelegate <NSObject>
 - (void)successWithResponse:(id)response;
 - (void)failWithResponse:(id)response;
@@ -27,6 +35,16 @@ typedef NS_ENUM (NSUInteger, XFError) {
  *	@return XFNetEngine唯一实例
  */
 + (id)sharedInstance;
-- (void)postRequestWithRouter:(NSString*)router Param:(NSDictionary*)param Block:(returnBlock)block;
-- (void)getRequestWithRouter:(NSString*)router Param:(NSDictionary*)param Block:(returnBlock)block;
+
+- (void)postRequestWithRouter:(NSString*)router
+                        param:(NSDictionary*)param
+                     progress:(progressBlock)progress
+                      success:(netSuccessBlock)success
+                         fail:(netFailBlock)fail;
+
+- (void)getRequestWithRouter:(NSString*)router
+                       param:(NSDictionary*)param
+                    progress:(progressBlock)progress
+                     success:(netSuccessBlock)success
+                        fail:(netFailBlock)fail;
 @end

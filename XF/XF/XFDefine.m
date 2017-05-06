@@ -9,7 +9,3 @@
 #import "XFDefine.h"
 
 NSString *const XFErrorDomain = @"XFErrorDomain";
-
-@implementation XFDefine
-
-@end

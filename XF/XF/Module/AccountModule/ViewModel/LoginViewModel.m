@@ -8,6 +8,21 @@
 
 #import "LoginViewModel.h"
 
+@interface LoginViewModel ()<XFApiManagerDelegate>
+
+@end
+
 @implementation LoginViewModel
 
+- (void)loginWithUserName:(NSString*)userName password:(NSString*)password {
+    [[XFApiManager sharedInstance] loginWithUserName:userName password:password];
+}
+
+- (void)successWithResponse:(id)response {
+    
+}
+
+- (void)failWithResponse:(id)response {
+    
+}
 @end

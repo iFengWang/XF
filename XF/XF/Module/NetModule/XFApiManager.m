@@ -36,7 +36,11 @@
 }
 
 
-- (void)postRequestWithRouter:(NSString*)router Param:(NSDictionary*)param Block:(returnBlock)block {
+- (void)postRequestWithRouter:(NSString*)router
+                        param:(NSDictionary*)param
+                     progress:(progressBlock)progress
+                      success:(netSuccessBlock)success
+                         fail:(netFailBlock)fail {
     NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.baseURL, router];
     [self POST:urlString parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
         //
@@ -47,7 +51,11 @@
     }];
 }
 
-- (void)getRequestWithRouter:(NSString*)router Param:(NSDictionary*)param Block:(returnBlock)block {
+- (void)getRequestWithRouter:(NSString*)router
+                       param:(NSDictionary*)param
+                    progress:(progressBlock)progress
+                     success:(netSuccessBlock)success
+                        fail:(netFailBlock)fail {
     NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.baseURL, router];
     [self GET:urlString parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
         //

@@ -9,6 +9,6 @@
 #ifndef XFRouterDefine_h
 #define XFRouterDefine_h
 
-#define XF_USERLOGIN                    @"api/user/login"
+#define XFROUTER_USERLOGIN                    @"api/user/login"
 
 #endif /* XFRouterDefine_h */

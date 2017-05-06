@@ -18,7 +18,7 @@
  *
  *	@return    nil
  */
-+ (void)downLoadTaskWithParam:(NSDictionary*)param ProgressBlock:(onProgressBlock)progress Block:(onReturnBlock)block;
+- (void)downLoadTaskWithParam:(NSDictionary*)param progress:(progressBlock)progress success:(netSuccessBlock)block;
 
 /**
  *	@brief	创建一个上传任务
@@ -29,11 +29,5 @@
  *
  *	@return     nil
  */
-+ (void)upLoadTaskWithParam:(NSDictionary*)param ProgressBlock:(onProgressBlock)progress Block:(onReturnBlock)block;
-
-
-+ (void)postDataToServerWithParam:(NSDictionary*)param Block:(onReturnBlock)block;
-+ (void)getDataFromServerWithParam:(NSDictionary*)param Block:(onReturnBlock)block;
-+ (void)putDataToServerWithParam:(NSDictionary*)param Block:(onReturnBlock)block;
-+ (void)deleteDataToServerWithParam:(NSDictionary*)param Block:(onReturnBlock)block;
+- (void)upLoadTaskWithParam:(NSDictionary*)param progress:(progressBlock)progress success:(netSuccessBlock)block;
 @end

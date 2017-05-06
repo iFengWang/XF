@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface LoginViewModel : NSObject
-
+- (void)loginWithUserName:(NSString*)userName password:(NSString*)password;
 @end
